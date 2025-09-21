@@ -1,17 +1,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>Amazon</groupId>
     <artifactId>AmazonApp</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
-
     <name>AmazonApp Maven Webapp</name>
     <url>http://maven.apache.org</url>
 
     <dependencies>
+        <!-- JUnit 5 for testing -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
@@ -19,7 +21,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Optional: Servlet API if using servlets -->
+        <!-- Optional: Servlet API (if you're using servlets/JSP) -->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
@@ -31,6 +33,7 @@
     <build>
         <finalName>AmazonApp</finalName>
         <plugins>
+            <!-- Compiler plugin to define Java version -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -42,4 +45,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
